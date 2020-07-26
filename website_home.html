@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Srazers/Home</title>
+<style type="text/css">
+  body{
+   background-image: url(image/background.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100%;
+  }
+  button {
+  background-color: dodgerblue; : white; 
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  position:relative;
+    top: 50%;
+    left: 50%;
+  }
+  button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+  button:hover span{
+    padding-right: 25px;
+  }
+  button:hover span:after{
+    opacity: 1;
+    right: 0;
+  }
+</style>
+<link rel="stylesheet" type="text/css" href="css/website.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="website.js"></script>
+</head>
+
+<body>
+  <div class="header">
+  <a class="logo"><img src="logo.png" width="130px" height="130" alt="logo"/></a>
+  <h1><p style="text-align:left;">SRAZERS</p></h1>
+  <div class="header-right">
+     <a class="active" href="website_home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a> 
+      <a href="demo.html">Demo</a>  
+      <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="slideshow"> 
+     <h1><p style="text-align:center;">slideshow </p></h1>
+     slideshow of pictures with links just like the button
+   </p></div>
+   <div>
+<button onclick="window.location.href='courses.html'"><span>Get Started</span></button></div>
+<div>
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">SRAZERS aims to provide the college students will a new platform which will help them to continue to their path of success but with smart work, better and fun learning.</p>
+          </div>
+
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">SRAZERS</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</div>
+</body>
+</html>
